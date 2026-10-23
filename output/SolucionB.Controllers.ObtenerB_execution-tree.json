@@ -1,0 +1,46 @@
+{
+  "Id": "3c00b67d-e904-4053-8f2a-0f407b4c31f7",
+  "MethodName": "ObtenerB",
+  "MethodClass": "ServicioLocalController",
+  "MethodFile": "c:\\TEST1\\SolucionB\\Controllers\\ServicioLocalController.cs",
+  "Code": "        [HttpGet(\u0022obtenerb\u0022)]\r\n        public async Task\u003CActionResult\u003CModeloB\u003E\u003E ObtenerB(int id)\r\n        {\r\n            var resultado = await _servicioLocal.ObtenerModeloBAsync(id);\r\n            return Ok(resultado);\r\n        }",
+  "Children": [
+    {
+      "Id": "2f9c5c83-44e9-46cd-8f12-87ca261f7783",
+      "MethodName": "ObtenerModeloBAsync",
+      "MethodClass": "ServicioLocal",
+      "MethodFile": "c:\\TEST1\\SolucionB\\Services\\ServicioLocal.cs",
+      "Code": "        public async Task\u003CModeloB\u003E ObtenerModeloBAsync(int id)\r\n        {\r\n            var productoRemoto = await _remoteService.ServiceBackEnd.ProductosApiAsync(id);\r\n            \r\n            return new ModeloB\r\n            {\r\n                Id = id,\r\n                Descripcion = $\u0022Stock: {productoRemoto.Stock}\u0022\r\n            };\r\n        }",
+      "Children": [
+        {
+          "MethodName": "ProductosApiAsync",
+          "MethodClass": "ServiceBackEndClient",
+          "MethodFile": "",
+          "Code": "",
+          "Children": [
+            {
+              "Id": "2fbc30b9-b5d7-4752-a300-d1250037f232",
+              "MethodName": "GetPorId",
+              "MethodClass": "ProductosApiController",
+              "MethodFile": "c:\\TEST1\\SolucionA\\Controllers\\Api\\ProductosApiController.cs",
+              "Code": "        [HttpGet(\u0022{id}\u0022)]\r\n        public ActionResult\u003CProducto\u003E GetPorId(int id)\r\n        {\r\n            var producto = _service.ObtenerPorId(id);\r\n            if (producto == null)\r\n                return NotFound();\r\n            return Ok(producto);\r\n        }",
+              "Children": [],
+              "Origin": "Backend",
+              "CrossSolution": {
+                "HttpVerb": "GET",
+                "RequestedPath": "/api/ProductosApi/{id}"
+              },
+              "Unresolved": false
+            }
+          ],
+          "Origin": "RemoteWrapper",
+          "Unresolved": false
+        }
+      ],
+      "Origin": "Frontend",
+      "Unresolved": false
+    }
+  ],
+  "Origin": "Frontend",
+  "Unresolved": false
+}

@@ -1,0 +1,307 @@
+[
+  {
+    "Id": "b0bba3af-533d-48bc-b2fc-b630efb99657",
+    "ProjectName": "SolucionA",
+    "File": "c:\\TEST1\\SolucionA\\Controllers\\Api\\ProductosApiController.cs",
+    "LineInit": 18,
+    "LineEnd": 22,
+    "Namespace": "SolucionA.Controllers.Api",
+    "Class": "ProductosApiController",
+    "MethodName": "GetTodos",
+    "ReturnType": "ActionResult\u003CList\u003CProducto\u003E\u003E",
+    "Parameters": [],
+    "Attributes": [
+      "HttpGet"
+    ],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ObtenerTodos",
+        "ContainingAssembly": "SolucionA",
+        "ContainingNamespace": "Services",
+        "Parameters": [],
+        "ReturnType": "List\u003CProducto\u003E",
+        "ClassName": "IProductoService",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionA\\Services\\IProductoService.cs",
+        "IsRemoteWrapper": false,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": false,
+    "HttpVerb": "GET",
+    "RouteTemplates": [
+      "/api/ProductosApi"
+    ]
+  },
+  {
+    "Id": "2fbc30b9-b5d7-4752-a300-d1250037f232",
+    "ProjectName": "SolucionA",
+    "File": "c:\\TEST1\\SolucionA\\Controllers\\Api\\ProductosApiController.cs",
+    "LineInit": 24,
+    "LineEnd": 31,
+    "Namespace": "SolucionA.Controllers.Api",
+    "Class": "ProductosApiController",
+    "MethodName": "GetPorId",
+    "ReturnType": "ActionResult\u003CProducto\u003E",
+    "Parameters": [
+      "int id"
+    ],
+    "Attributes": [
+      "HttpGet"
+    ],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ObtenerPorId",
+        "ContainingAssembly": "SolucionA",
+        "ContainingNamespace": "Services",
+        "Parameters": [
+          "int id"
+        ],
+        "ReturnType": "Producto",
+        "ClassName": "IProductoService",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionA\\Services\\IProductoService.cs",
+        "IsRemoteWrapper": false,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": false,
+    "HttpVerb": "GET",
+    "RouteTemplates": [
+      "/api/ProductosApi/{id}"
+    ]
+  },
+  {
+    "Id": "8ac94417-205c-4164-b17c-54d7d9745abe",
+    "ProjectName": "SolucionA",
+    "File": "c:\\TEST1\\SolucionA\\Controllers\\Api\\ProductosApiController.cs",
+    "LineInit": 33,
+    "LineEnd": 40,
+    "Namespace": "SolucionA.Controllers.Api",
+    "Class": "ProductosApiController",
+    "MethodName": "GetPorNombre",
+    "ReturnType": "ActionResult\u003CProducto\u003E",
+    "Parameters": [
+      "[FromQuery] string nombre"
+    ],
+    "Attributes": [
+      "HttpGet"
+    ],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ObtenerPorNombre",
+        "ContainingAssembly": "SolucionA",
+        "ContainingNamespace": "Services",
+        "Parameters": [
+          "string nombre"
+        ],
+        "ReturnType": "Producto",
+        "ClassName": "IProductoService",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionA\\Services\\IProductoService.cs",
+        "IsRemoteWrapper": false,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": false,
+    "HttpVerb": "GET",
+    "RouteTemplates": [
+      "/api/ProductosApi/buscar"
+    ]
+  },
+  {
+    "Id": "20728046-39af-4317-a403-ea5ac5a06b6c",
+    "ProjectName": "SolucionA",
+    "File": "c:\\TEST1\\SolucionA\\Controllers\\ProductosController.cs",
+    "LineInit": 17,
+    "LineEnd": 21,
+    "Namespace": "SolucionA.Controllers",
+    "Class": "ProductosController",
+    "MethodName": "Index",
+    "ReturnType": "IActionResult",
+    "Parameters": [],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ObtenerTodos",
+        "ContainingAssembly": "SolucionA",
+        "ContainingNamespace": "Services",
+        "Parameters": [],
+        "ReturnType": "List\u003CProducto\u003E",
+        "ClassName": "IProductoService",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionA\\Services\\IProductoService.cs",
+        "IsRemoteWrapper": false,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": false,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "781f3b05-c3fd-46f1-92aa-0d7263fd92d6",
+    "ProjectName": "SolucionA",
+    "File": "c:\\TEST1\\SolucionA\\Controllers\\ProductosController.cs",
+    "LineInit": 24,
+    "LineEnd": 30,
+    "Namespace": "SolucionA.Controllers",
+    "Class": "ProductosController",
+    "MethodName": "PorId",
+    "ReturnType": "IActionResult",
+    "Parameters": [
+      "int id"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ObtenerPorId",
+        "ContainingAssembly": "SolucionA",
+        "ContainingNamespace": "Services",
+        "Parameters": [
+          "int id"
+        ],
+        "ReturnType": "Producto",
+        "ClassName": "IProductoService",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionA\\Services\\IProductoService.cs",
+        "IsRemoteWrapper": false,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": false,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "f5af66bf-3690-4e7e-a64e-7c31320a2173",
+    "ProjectName": "SolucionA",
+    "File": "c:\\TEST1\\SolucionA\\Controllers\\ProductosController.cs",
+    "LineInit": 33,
+    "LineEnd": 39,
+    "Namespace": "SolucionA.Controllers",
+    "Class": "ProductosController",
+    "MethodName": "PorNombre",
+    "ReturnType": "IActionResult",
+    "Parameters": [
+      "string nombre"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ObtenerPorNombre",
+        "ContainingAssembly": "SolucionA",
+        "ContainingNamespace": "Services",
+        "Parameters": [
+          "string nombre"
+        ],
+        "ReturnType": "Producto",
+        "ClassName": "IProductoService",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionA\\Services\\IProductoService.cs",
+        "IsRemoteWrapper": false,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": false,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "fc1c170e-303f-4308-b83d-5d8df3ef97db",
+    "ProjectName": "SolucionA",
+    "File": "c:\\TEST1\\SolucionA\\Services\\ProductoService.cs",
+    "LineInit": 15,
+    "LineEnd": 18,
+    "Namespace": "SolucionA.Services",
+    "Class": "ProductoService",
+    "MethodName": "ObtenerTodos",
+    "ReturnType": "List\u003CProducto\u003E",
+    "Parameters": [],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [],
+    "IsRemoteWrapper": false,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "77e05d21-b9ab-4de9-a3df-a8a0c99d43ad",
+    "ProjectName": "SolucionA",
+    "File": "c:\\TEST1\\SolucionA\\Services\\ProductoService.cs",
+    "LineInit": 20,
+    "LineEnd": 23,
+    "Namespace": "SolucionA.Services",
+    "Class": "ProductoService",
+    "MethodName": "ObtenerPorId",
+    "ReturnType": "Producto",
+    "Parameters": [
+      "int id"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [],
+    "IsRemoteWrapper": false,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "391ad452-f1b6-46f9-ae54-8ebdb97cbdac",
+    "ProjectName": "SolucionA",
+    "File": "c:\\TEST1\\SolucionA\\Services\\ProductoService.cs",
+    "LineInit": 25,
+    "LineEnd": 28,
+    "Namespace": "SolucionA.Services",
+    "Class": "ProductoService",
+    "MethodName": "ObtenerPorNombre",
+    "ReturnType": "Producto",
+    "Parameters": [
+      "string nombre"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [],
+    "IsRemoteWrapper": false,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  }
+]

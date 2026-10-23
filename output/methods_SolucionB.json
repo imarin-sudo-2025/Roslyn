@@ -1,0 +1,1452 @@
+[
+  {
+    "Id": "f58a8989-3e71-4130-b419-c91078b934a3",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\Controllers\\ServicioLocalController.cs",
+    "LineInit": 18,
+    "LineEnd": 23,
+    "Namespace": "SolucionB.Controllers",
+    "Class": "ServicioLocalController",
+    "MethodName": "ObtenerA",
+    "ReturnType": "Task\u003CActionResult\u003CModeloA\u003E\u003E",
+    "Parameters": [
+      "int id"
+    ],
+    "Attributes": [
+      "HttpGet"
+    ],
+    "IsAsync": true,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ObtenerModeloAAsync",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Services",
+        "Parameters": [
+          "int id"
+        ],
+        "ReturnType": "Task\u003CModeloA\u003E",
+        "ClassName": "IServicioLocal",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\Services\\IServicioLocal.cs",
+        "IsRemoteWrapper": false,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": false,
+    "HttpVerb": "GET",
+    "RouteTemplates": [
+      "/api/ServicioLocal/obtenera"
+    ]
+  },
+  {
+    "Id": "3c00b67d-e904-4053-8f2a-0f407b4c31f7",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\Controllers\\ServicioLocalController.cs",
+    "LineInit": 25,
+    "LineEnd": 30,
+    "Namespace": "SolucionB.Controllers",
+    "Class": "ServicioLocalController",
+    "MethodName": "ObtenerB",
+    "ReturnType": "Task\u003CActionResult\u003CModeloB\u003E\u003E",
+    "Parameters": [
+      "int id"
+    ],
+    "Attributes": [
+      "HttpGet"
+    ],
+    "IsAsync": true,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ObtenerModeloBAsync",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Services",
+        "Parameters": [
+          "int id"
+        ],
+        "ReturnType": "Task\u003CModeloB\u003E",
+        "ClassName": "IServicioLocal",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\Services\\IServicioLocal.cs",
+        "IsRemoteWrapper": false,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": false,
+    "HttpVerb": "GET",
+    "RouteTemplates": [
+      "/api/ServicioLocal/obtenerb"
+    ]
+  },
+  {
+    "Id": "40c20e31-ef3b-4b76-ab0b-8a7417c44c66",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 42,
+    "LineEnd": 42,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "UpdateJsonSerializerSettings",
+    "ReturnType": "void",
+    "Parameters": [
+      "Newtonsoft.Json.JsonSerializerSettings settings"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": false,
+    "Children": [],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "19846169-2db0-456b-9cfa-6f35da8f30e4",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 43,
+    "LineEnd": 43,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "PrepareRequest",
+    "ReturnType": "void",
+    "Parameters": [
+      "System.Net.Http.HttpClient client",
+      "System.Net.Http.HttpRequestMessage request",
+      "string url"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": false,
+    "Children": [],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "3a451a0d-9c44-46a1-be9b-163dcdbf2a36",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 44,
+    "LineEnd": 44,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "PrepareRequest",
+    "ReturnType": "void",
+    "Parameters": [
+      "System.Net.Http.HttpClient client",
+      "System.Net.Http.HttpRequestMessage request",
+      "System.Text.StringBuilder urlBuilder"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": false,
+    "Children": [],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "dcf903fb-7382-4dd6-afb7-e6518cee51cb",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 45,
+    "LineEnd": 45,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "ProcessResponse",
+    "ReturnType": "void",
+    "Parameters": [
+      "System.Net.Http.HttpClient client",
+      "System.Net.Http.HttpResponseMessage response"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": false,
+    "Children": [],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "b570e8c0-f449-4ed7-88cd-26ab2115db32",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 49,
+    "LineEnd": 52,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "ProductosApiAllAsync",
+    "ReturnType": "System.Threading.Tasks.Task\u003CSystem.Collections.Generic.ICollection\u003CProducto\u003E\u003E",
+    "Parameters": [],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ProductosApiAllAsync",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Threading.CancellationToken cancellationToken"
+        ],
+        "ReturnType": "System.Threading.Tasks.Task\u003CSystem.Collections.Generic.ICollection\u003CProducto\u003E\u003E",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": true,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "GET",
+        "RouteTemplate": "/api/ProductosApi"
+      }
+    ],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "3d13627b-332f-4dc8-bd5f-09e35839784f",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 57,
+    "LineEnd": 112,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "ProductosApiAllAsync",
+    "ReturnType": "System.Threading.Tasks.Task\u003CSystem.Collections.Generic.ICollection\u003CProducto\u003E\u003E",
+    "Parameters": [
+      "System.Threading.CancellationToken cancellationToken"
+    ],
+    "Attributes": [],
+    "IsAsync": true,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "PrepareRequest",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpRequestMessage request",
+          "System.Text.StringBuilder urlBuilder"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "PrepareRequest",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpRequestMessage request",
+          "string url"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "ProcessResponse",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpResponseMessage response"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "ReadObjectResponseAsync",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpResponseMessage response",
+          "System.Collections.Generic.IReadOnlyDictionary\u003Cstring, System.Collections.Generic.IEnumerable\u003Cstring\u003E\u003E headers"
+        ],
+        "ReturnType": "System.Threading.Tasks.Task\u003CObjectResponseResult\u003CT\u003E\u003E",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": true,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": true,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "6acbfc1c-5f3c-4e68-938a-cd2003be5e39",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 116,
+    "LineEnd": 119,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "ProductosApiAsync",
+    "ReturnType": "System.Threading.Tasks.Task\u003CProducto\u003E",
+    "Parameters": [
+      "int id"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ProductosApiAsync",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "int id",
+          "System.Threading.CancellationToken cancellationToken"
+        ],
+        "ReturnType": "System.Threading.Tasks.Task\u003CProducto\u003E",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": true,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "GET",
+        "RouteTemplate": "/api/ProductosApi/{id}"
+      }
+    ],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "2b31d136-cfae-433b-9751-04b5ed9484c7",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 124,
+    "LineEnd": 183,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "ProductosApiAsync",
+    "ReturnType": "System.Threading.Tasks.Task\u003CProducto\u003E",
+    "Parameters": [
+      "int id",
+      "System.Threading.CancellationToken cancellationToken"
+    ],
+    "Attributes": [],
+    "IsAsync": true,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ConvertToString",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "object value",
+          "System.Globalization.CultureInfo cultureInfo"
+        ],
+        "ReturnType": "string",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "PrepareRequest",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpRequestMessage request",
+          "System.Text.StringBuilder urlBuilder"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "PrepareRequest",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpRequestMessage request",
+          "string url"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "ProcessResponse",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpResponseMessage response"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "ReadObjectResponseAsync",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpResponseMessage response",
+          "System.Collections.Generic.IReadOnlyDictionary\u003Cstring, System.Collections.Generic.IEnumerable\u003Cstring\u003E\u003E headers"
+        ],
+        "ReturnType": "System.Threading.Tasks.Task\u003CObjectResponseResult\u003CT\u003E\u003E",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": true,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": true,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "4392ed07-2371-466a-878a-00cb976b9f26",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 187,
+    "LineEnd": 190,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "BuscarAsync",
+    "ReturnType": "System.Threading.Tasks.Task\u003CProducto\u003E",
+    "Parameters": [
+      "string nombre"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "BuscarAsync",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "string nombre",
+          "System.Threading.CancellationToken cancellationToken"
+        ],
+        "ReturnType": "System.Threading.Tasks.Task\u003CProducto\u003E",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": true,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "GET",
+        "RouteTemplate": "/api/ProductosApi/buscar?"
+      }
+    ],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "42cad437-4a2d-48d9-949e-efcbac6a01ca",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 195,
+    "LineEnd": 255,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "BuscarAsync",
+    "ReturnType": "System.Threading.Tasks.Task\u003CProducto\u003E",
+    "Parameters": [
+      "string nombre",
+      "System.Threading.CancellationToken cancellationToken"
+    ],
+    "Attributes": [],
+    "IsAsync": true,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ConvertToString",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "object value",
+          "System.Globalization.CultureInfo cultureInfo"
+        ],
+        "ReturnType": "string",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "PrepareRequest",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpRequestMessage request",
+          "System.Text.StringBuilder urlBuilder"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "PrepareRequest",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpRequestMessage request",
+          "string url"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "ProcessResponse",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpResponseMessage response"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "ReadObjectResponseAsync",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpResponseMessage response",
+          "System.Collections.Generic.IReadOnlyDictionary\u003Cstring, System.Collections.Generic.IEnumerable\u003Cstring\u003E\u003E headers"
+        ],
+        "ReturnType": "System.Threading.Tasks.Task\u003CObjectResponseResult\u003CT\u003E\u003E",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": true,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": true,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "bc2af869-7d9f-4325-ac6f-56a5b3866056",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 272,
+    "LineEnd": 312,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "ReadObjectResponseAsync",
+    "ReturnType": "System.Threading.Tasks.Task\u003CObjectResponseResult\u003CT\u003E\u003E",
+    "Parameters": [
+      "System.Net.Http.HttpResponseMessage response",
+      "System.Collections.Generic.IReadOnlyDictionary\u003Cstring, System.Collections.Generic.IEnumerable\u003Cstring\u003E\u003E headers"
+    ],
+    "Attributes": [],
+    "IsAsync": true,
+    "IsPublic": false,
+    "Children": [],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "f4d9a171-6e9a-49b6-944c-25177dcf186d",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 314,
+    "LineEnd": 347,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "ConvertToString",
+    "ReturnType": "string",
+    "Parameters": [
+      "object value",
+      "System.Globalization.CultureInfo cultureInfo"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": false,
+    "Children": [
+      {
+        "ChildMethodName": "ConvertToString",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "object value",
+          "System.Globalization.CultureInfo cultureInfo"
+        ],
+        "ReturnType": "string",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "730d28e0-e17a-4747-98e0-c17c54bc91e2",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 388,
+    "LineEnd": 391,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ApiException",
+    "MethodName": "ToString",
+    "ReturnType": "string",
+    "Parameters": [],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "df9296f2-9dab-44dd-b12a-ff8f965200a4",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\Services\\ServicioLocal.cs",
+    "LineInit": 15,
+    "LineEnd": 26,
+    "Namespace": "SolucionB.Services",
+    "Class": "ServicioLocal",
+    "MethodName": "ObtenerModeloAAsync",
+    "ReturnType": "Task\u003CModeloA\u003E",
+    "Parameters": [
+      "int id"
+    ],
+    "Attributes": [],
+    "IsAsync": true,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ProductosApiAsync",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "int id"
+        ],
+        "ReturnType": "System.Threading.Tasks.Task\u003CProducto\u003E",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "GET",
+        "RouteTemplate": "/api/ProductosApi/{id}"
+      },
+      {
+        "ChildMethodName": "ObtenerModeloBAsync",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Services",
+        "Parameters": [
+          "int id"
+        ],
+        "ReturnType": "Task\u003CModeloB\u003E",
+        "ClassName": "ServicioLocal",
+        "IsAsync": true,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\Services\\ServicioLocal.cs",
+        "IsRemoteWrapper": false,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": false,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "2f9c5c83-44e9-46cd-8f12-87ca261f7783",
+    "ProjectName": "SolucionB",
+    "File": "c:\\TEST1\\SolucionB\\Services\\ServicioLocal.cs",
+    "LineInit": 28,
+    "LineEnd": 37,
+    "Namespace": "SolucionB.Services",
+    "Class": "ServicioLocal",
+    "MethodName": "ObtenerModeloBAsync",
+    "ReturnType": "Task\u003CModeloB\u003E",
+    "Parameters": [
+      "int id"
+    ],
+    "Attributes": [],
+    "IsAsync": true,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ProductosApiAsync",
+        "ContainingAssembly": "SolucionB",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "int id"
+        ],
+        "ReturnType": "System.Threading.Tasks.Task\u003CProducto\u003E",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "GET",
+        "RouteTemplate": "/api/ProductosApi/{id}"
+      }
+    ],
+    "IsRemoteWrapper": false,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "858260d2-8566-49ae-bb18-6fb9062ea174",
+    "ProjectName": "RemoteClientBackEnd",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 42,
+    "LineEnd": 42,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "UpdateJsonSerializerSettings",
+    "ReturnType": "void",
+    "Parameters": [
+      "Newtonsoft.Json.JsonSerializerSettings settings"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": false,
+    "Children": [],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "3163b0fd-9271-4bcd-b70c-ec33b472ce3a",
+    "ProjectName": "RemoteClientBackEnd",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 43,
+    "LineEnd": 43,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "PrepareRequest",
+    "ReturnType": "void",
+    "Parameters": [
+      "System.Net.Http.HttpClient client",
+      "System.Net.Http.HttpRequestMessage request",
+      "string url"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": false,
+    "Children": [],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "8b0cc33b-36e1-4f1b-9a8e-da99f59fb52b",
+    "ProjectName": "RemoteClientBackEnd",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 44,
+    "LineEnd": 44,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "PrepareRequest",
+    "ReturnType": "void",
+    "Parameters": [
+      "System.Net.Http.HttpClient client",
+      "System.Net.Http.HttpRequestMessage request",
+      "System.Text.StringBuilder urlBuilder"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": false,
+    "Children": [],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "9a34dfb1-a560-4098-a6a4-c6e97b357eb1",
+    "ProjectName": "RemoteClientBackEnd",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 45,
+    "LineEnd": 45,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "ProcessResponse",
+    "ReturnType": "void",
+    "Parameters": [
+      "System.Net.Http.HttpClient client",
+      "System.Net.Http.HttpResponseMessage response"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": false,
+    "Children": [],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "49fd8bdd-8f67-4a45-8680-10e75ad1467c",
+    "ProjectName": "RemoteClientBackEnd",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 49,
+    "LineEnd": 52,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "ProductosApiAllAsync",
+    "ReturnType": "System.Threading.Tasks.Task\u003CSystem.Collections.Generic.ICollection\u003CProducto\u003E\u003E",
+    "Parameters": [],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ProductosApiAllAsync",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Threading.CancellationToken cancellationToken"
+        ],
+        "ReturnType": "System.Threading.Tasks.Task\u003CSystem.Collections.Generic.ICollection\u003CProducto\u003E\u003E",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": true,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "GET",
+        "RouteTemplate": "/api/ProductosApi"
+      }
+    ],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "1cf12d7f-08ec-4a48-bd72-0714ddb2c9d3",
+    "ProjectName": "RemoteClientBackEnd",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 57,
+    "LineEnd": 112,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "ProductosApiAllAsync",
+    "ReturnType": "System.Threading.Tasks.Task\u003CSystem.Collections.Generic.ICollection\u003CProducto\u003E\u003E",
+    "Parameters": [
+      "System.Threading.CancellationToken cancellationToken"
+    ],
+    "Attributes": [],
+    "IsAsync": true,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "PrepareRequest",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpRequestMessage request",
+          "System.Text.StringBuilder urlBuilder"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "PrepareRequest",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpRequestMessage request",
+          "string url"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "ProcessResponse",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpResponseMessage response"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "ReadObjectResponseAsync",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpResponseMessage response",
+          "System.Collections.Generic.IReadOnlyDictionary\u003Cstring, System.Collections.Generic.IEnumerable\u003Cstring\u003E\u003E headers"
+        ],
+        "ReturnType": "System.Threading.Tasks.Task\u003CObjectResponseResult\u003CT\u003E\u003E",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": true,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": true,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "3e8b6d43-becc-4bd3-b22c-60a445e05059",
+    "ProjectName": "RemoteClientBackEnd",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 116,
+    "LineEnd": 119,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "ProductosApiAsync",
+    "ReturnType": "System.Threading.Tasks.Task\u003CProducto\u003E",
+    "Parameters": [
+      "int id"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ProductosApiAsync",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "int id",
+          "System.Threading.CancellationToken cancellationToken"
+        ],
+        "ReturnType": "System.Threading.Tasks.Task\u003CProducto\u003E",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": true,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "GET",
+        "RouteTemplate": "/api/ProductosApi/{id}"
+      }
+    ],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "d4734e21-724d-48c1-982a-5c8d3cb7068d",
+    "ProjectName": "RemoteClientBackEnd",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 124,
+    "LineEnd": 183,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "ProductosApiAsync",
+    "ReturnType": "System.Threading.Tasks.Task\u003CProducto\u003E",
+    "Parameters": [
+      "int id",
+      "System.Threading.CancellationToken cancellationToken"
+    ],
+    "Attributes": [],
+    "IsAsync": true,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ConvertToString",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "object value",
+          "System.Globalization.CultureInfo cultureInfo"
+        ],
+        "ReturnType": "string",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "PrepareRequest",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpRequestMessage request",
+          "System.Text.StringBuilder urlBuilder"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "PrepareRequest",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpRequestMessage request",
+          "string url"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "ProcessResponse",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpResponseMessage response"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "ReadObjectResponseAsync",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpResponseMessage response",
+          "System.Collections.Generic.IReadOnlyDictionary\u003Cstring, System.Collections.Generic.IEnumerable\u003Cstring\u003E\u003E headers"
+        ],
+        "ReturnType": "System.Threading.Tasks.Task\u003CObjectResponseResult\u003CT\u003E\u003E",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": true,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": true,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "86f63a7a-61eb-4ba7-8721-8b36b7dcc4bc",
+    "ProjectName": "RemoteClientBackEnd",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 187,
+    "LineEnd": 190,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "BuscarAsync",
+    "ReturnType": "System.Threading.Tasks.Task\u003CProducto\u003E",
+    "Parameters": [
+      "string nombre"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "BuscarAsync",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "string nombre",
+          "System.Threading.CancellationToken cancellationToken"
+        ],
+        "ReturnType": "System.Threading.Tasks.Task\u003CProducto\u003E",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": true,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "GET",
+        "RouteTemplate": "/api/ProductosApi/buscar?"
+      }
+    ],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "413346a4-0388-4877-b172-8b1213b170fb",
+    "ProjectName": "RemoteClientBackEnd",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 195,
+    "LineEnd": 255,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "BuscarAsync",
+    "ReturnType": "System.Threading.Tasks.Task\u003CProducto\u003E",
+    "Parameters": [
+      "string nombre",
+      "System.Threading.CancellationToken cancellationToken"
+    ],
+    "Attributes": [],
+    "IsAsync": true,
+    "IsPublic": true,
+    "Children": [
+      {
+        "ChildMethodName": "ConvertToString",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "object value",
+          "System.Globalization.CultureInfo cultureInfo"
+        ],
+        "ReturnType": "string",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "PrepareRequest",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpRequestMessage request",
+          "System.Text.StringBuilder urlBuilder"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "PrepareRequest",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpRequestMessage request",
+          "string url"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "ProcessResponse",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpClient client",
+          "System.Net.Http.HttpResponseMessage response"
+        ],
+        "ReturnType": "void",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      },
+      {
+        "ChildMethodName": "ReadObjectResponseAsync",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "System.Net.Http.HttpResponseMessage response",
+          "System.Collections.Generic.IReadOnlyDictionary\u003Cstring, System.Collections.Generic.IEnumerable\u003Cstring\u003E\u003E headers"
+        ],
+        "ReturnType": "System.Threading.Tasks.Task\u003CObjectResponseResult\u003CT\u003E\u003E",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": true,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": true,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "0d001edc-f105-4c29-9a64-1105243b078d",
+    "ProjectName": "RemoteClientBackEnd",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 272,
+    "LineEnd": 312,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "ReadObjectResponseAsync",
+    "ReturnType": "System.Threading.Tasks.Task\u003CObjectResponseResult\u003CT\u003E\u003E",
+    "Parameters": [
+      "System.Net.Http.HttpResponseMessage response",
+      "System.Collections.Generic.IReadOnlyDictionary\u003Cstring, System.Collections.Generic.IEnumerable\u003Cstring\u003E\u003E headers"
+    ],
+    "Attributes": [],
+    "IsAsync": true,
+    "IsPublic": false,
+    "Children": [],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "141a1f43-0bf0-4232-bf31-fdb1e0ca951b",
+    "ProjectName": "RemoteClientBackEnd",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 314,
+    "LineEnd": 347,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ServiceBackEndClient",
+    "MethodName": "ConvertToString",
+    "ReturnType": "string",
+    "Parameters": [
+      "object value",
+      "System.Globalization.CultureInfo cultureInfo"
+    ],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": false,
+    "Children": [
+      {
+        "ChildMethodName": "ConvertToString",
+        "ContainingAssembly": "RemoteClientBackEnd",
+        "ContainingNamespace": "Clients",
+        "Parameters": [
+          "object value",
+          "System.Globalization.CultureInfo cultureInfo"
+        ],
+        "ReturnType": "string",
+        "ClassName": "ServiceBackEndClient",
+        "IsAsync": false,
+        "IsPublic": false,
+        "IsOverride": false,
+        "IsVirtual": false,
+        "FilePath": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+        "IsRemoteWrapper": true,
+        "HttpVerb": "",
+        "RouteTemplate": ""
+      }
+    ],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  },
+  {
+    "Id": "663fc0b6-3b29-49d3-b8fa-587d50dd55ef",
+    "ProjectName": "RemoteClientBackEnd",
+    "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+    "LineInit": 388,
+    "LineEnd": 391,
+    "Namespace": "SolucionB.RemoteClientBackEnd.Clients",
+    "Class": "ApiException",
+    "MethodName": "ToString",
+    "ReturnType": "string",
+    "Parameters": [],
+    "Attributes": [],
+    "IsAsync": false,
+    "IsPublic": true,
+    "Children": [],
+    "IsRemoteWrapper": true,
+    "HttpVerb": "",
+    "RouteTemplates": []
+  }
+]
