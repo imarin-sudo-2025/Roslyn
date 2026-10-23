@@ -1,6 +1,6 @@
 [
   {
-    "Id": "f58a8989-3e71-4130-b419-c91078b934a3",
+    "Id": "6e425bdc-47e8-448c-8066-51d636c1bcce",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\Controllers\\ServicioLocalController.cs",
     "LineInit": 18,
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "Id": "3c00b67d-e904-4053-8f2a-0f407b4c31f7",
+    "Id": "75deb6e1-b5e2-4276-8797-c183de6fd46d",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\Controllers\\ServicioLocalController.cs",
     "LineInit": 25,
@@ -88,7 +88,7 @@
     ]
   },
   {
-    "Id": "40c20e31-ef3b-4b76-ab0b-8a7417c44c66",
+    "Id": "a5d30c09-3e6c-43f7-becd-05d517f84f1e",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 42,
@@ -109,7 +109,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "19846169-2db0-456b-9cfa-6f35da8f30e4",
+    "Id": "29b3737f-baa7-40ab-8184-3639ff5d7e51",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 43,
@@ -132,7 +132,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "3a451a0d-9c44-46a1-be9b-163dcdbf2a36",
+    "Id": "709a0219-e2c8-4d5f-911b-8a6e5e678b4a",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 44,
@@ -155,7 +155,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "dcf903fb-7382-4dd6-afb7-e6518cee51cb",
+    "Id": "118fb3d1-750b-4ff6-8561-105ce75fff1d",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 45,
@@ -177,7 +177,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "b570e8c0-f449-4ed7-88cd-26ab2115db32",
+    "Id": "39eb1b26-412b-497e-8c14-2c6dae4a273a",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 49,
@@ -215,7 +215,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "3d13627b-332f-4dc8-bd5f-09e35839784f",
+    "Id": "7c5f91d6-a73b-4290-9457-bbaaa4acb9f3",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 57,
@@ -315,7 +315,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "6acbfc1c-5f3c-4e68-938a-cd2003be5e39",
+    "Id": "d975f385-67cf-48b6-a563-b293d5eb997c",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 116,
@@ -356,7 +356,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "2b31d136-cfae-433b-9751-04b5ed9484c7",
+    "Id": "edcf7933-5ae0-4045-8e43-435d3f77f09b",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 124,
@@ -476,7 +476,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "4392ed07-2371-466a-878a-00cb976b9f26",
+    "Id": "9fc0acb5-484e-4122-b587-d0d0fa4b48c5",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 187,
@@ -517,7 +517,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "42cad437-4a2d-48d9-949e-efcbac6a01ca",
+    "Id": "f8f13e86-9969-49ce-bcc8-158f0e8a222c",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 195,
@@ -637,7 +637,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "bc2af869-7d9f-4325-ac6f-56a5b3866056",
+    "Id": "775cc82c-a7d0-45aa-b03a-53f557e4d326",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 272,
@@ -659,7 +659,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "f4d9a171-6e9a-49b6-944c-25177dcf186d",
+    "Id": "c943eaff-51a6-458f-b56e-afdcee915d5b",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 314,
@@ -701,7 +701,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "730d28e0-e17a-4747-98e0-c17c54bc91e2",
+    "Id": "91b22bf9-843e-4519-878a-33b3ca3cf9c4",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 388,
@@ -720,7 +720,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "df9296f2-9dab-44dd-b12a-ff8f965200a4",
+    "Id": "d36f0827-7a4a-4815-8812-f67b5b1ba8d5",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\Services\\ServicioLocal.cs",
     "LineInit": 15,
@@ -778,7 +778,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "2f9c5c83-44e9-46cd-8f12-87ca261f7783",
+    "Id": "1449448d-0206-496a-bbf4-4e59bcbab9fe",
     "ProjectName": "SolucionB",
     "File": "c:\\TEST1\\SolucionB\\Services\\ServicioLocal.cs",
     "LineInit": 28,
@@ -818,7 +818,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "858260d2-8566-49ae-bb18-6fb9062ea174",
+    "Id": "551962b5-6b83-40f6-ba05-4c26cc0e833e",
     "ProjectName": "RemoteClientBackEnd",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 42,
@@ -839,7 +839,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "3163b0fd-9271-4bcd-b70c-ec33b472ce3a",
+    "Id": "c74ee2e7-527c-4f26-aa4e-8a0fbf4ef44a",
     "ProjectName": "RemoteClientBackEnd",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 43,
@@ -862,7 +862,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "8b0cc33b-36e1-4f1b-9a8e-da99f59fb52b",
+    "Id": "f3912ed4-6498-438f-8db7-af7a23f4d536",
     "ProjectName": "RemoteClientBackEnd",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 44,
@@ -885,7 +885,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "9a34dfb1-a560-4098-a6a4-c6e97b357eb1",
+    "Id": "18f391ed-4096-4a99-848e-87206ee89a03",
     "ProjectName": "RemoteClientBackEnd",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 45,
@@ -907,7 +907,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "49fd8bdd-8f67-4a45-8680-10e75ad1467c",
+    "Id": "7db9be83-dbad-496f-be2d-d8f61d796119",
     "ProjectName": "RemoteClientBackEnd",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 49,
@@ -945,7 +945,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "1cf12d7f-08ec-4a48-bd72-0714ddb2c9d3",
+    "Id": "4015cc66-818a-44b0-859e-0635f11ced1e",
     "ProjectName": "RemoteClientBackEnd",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 57,
@@ -1045,7 +1045,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "3e8b6d43-becc-4bd3-b22c-60a445e05059",
+    "Id": "5c9612e0-65d6-4bb8-88e2-586070a990be",
     "ProjectName": "RemoteClientBackEnd",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 116,
@@ -1086,7 +1086,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "d4734e21-724d-48c1-982a-5c8d3cb7068d",
+    "Id": "51459090-2a7c-440d-ae88-5519fc2ae040",
     "ProjectName": "RemoteClientBackEnd",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 124,
@@ -1206,7 +1206,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "86f63a7a-61eb-4ba7-8721-8b36b7dcc4bc",
+    "Id": "3af4aa79-4dd5-4dd2-a200-4b388a61e715",
     "ProjectName": "RemoteClientBackEnd",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 187,
@@ -1247,7 +1247,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "413346a4-0388-4877-b172-8b1213b170fb",
+    "Id": "1ca6edfd-72dc-4c78-9287-13bb4661ab8b",
     "ProjectName": "RemoteClientBackEnd",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 195,
@@ -1367,7 +1367,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "0d001edc-f105-4c29-9a64-1105243b078d",
+    "Id": "d5fc475d-afff-4c21-a5ee-49cea0c3ceb6",
     "ProjectName": "RemoteClientBackEnd",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 272,
@@ -1389,7 +1389,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "141a1f43-0bf0-4232-bf31-fdb1e0ca951b",
+    "Id": "248963e9-3692-4243-ba09-5d7679f26a57",
     "ProjectName": "RemoteClientBackEnd",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 314,
@@ -1431,7 +1431,7 @@
     "RouteTemplates": []
   },
   {
-    "Id": "663fc0b6-3b29-49d3-b8fa-587d50dd55ef",
+    "Id": "9ba350bc-90be-4de2-ba98-16498b2915d8",
     "ProjectName": "RemoteClientBackEnd",
     "File": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
     "LineInit": 388,

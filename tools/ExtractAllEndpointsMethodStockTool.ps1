@@ -159,7 +159,25 @@ function Get-RoutePrefixMap {
 	param([string]$pRootPath)
 
 	$lMap = @{}
-	$llstConfigFiles = Get-ChildItem -Path $pRootPath -Recurse -File -Include *.config |
+	
+	# Intenta leer del appsettings.json
+	$lAppSettingsPath = Join-Path $pRootPath "appsettings.json"
+	if (Test-Path $lAppSettingsPath) {
+		try {
+			$lAppSettings = Get-Content $lAppSettingsPath -Raw -Encoding UTF8 | ConvertFrom-Json
+			if ($null -ne $lAppSettings.RoutePrefix) {
+				foreach ($lKey in $lAppSettings.RoutePrefix.PSObject.Properties) {
+					$lMap[$lKey.Name] = $lKey.Value
+				}
+			}
+		}
+		catch {
+			# Si falla JSON, continuar
+		}
+	}
+	
+	# Fallback: busca en .config si existen
+	$llstConfigFiles = Get-ChildItem -Path $pRootPath -Recurse -File -Include *.config -ErrorAction SilentlyContinue |
 		Where-Object { $_.FullName -notmatch '\\node_modules\\|\\packages\\|\\.vs\\|\\bin\\|\\obj\\' }
 
 	foreach ($lCfg in $llstConfigFiles) {

@@ -122,3 +122,12 @@ C:\TEST1\Catalog\obj\Debug\net10.0\refint\Catalog.dll
 C:\TEST1\Catalog\obj\Debug\net10.0\Catalog.pdb
 C:\TEST1\Catalog\obj\Debug\net10.0\Catalog.genruntimeconfig.cache
 C:\TEST1\Catalog\obj\Debug\net10.0\ref\Catalog.dll
+C:\TEST1\Catalog\bin\Debug\net10.0\appsettings.json
+C:\TEST1\Catalog\bin\Debug\net10.0\Microsoft.Extensions.Configuration.dll
+C:\TEST1\Catalog\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\TEST1\Catalog\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\TEST1\Catalog\bin\Debug\net10.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\TEST1\Catalog\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Json.dll
+C:\TEST1\Catalog\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\TEST1\Catalog\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\TEST1\Catalog\bin\Debug\net10.0\Microsoft.Extensions.FileSystemGlobbing.dll

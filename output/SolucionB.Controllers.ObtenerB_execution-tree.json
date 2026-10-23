@@ -1,35 +1,47 @@
 {
-  "Id": "3c00b67d-e904-4053-8f2a-0f407b4c31f7",
+  "Id": "75deb6e1-b5e2-4276-8797-c183de6fd46d",
   "MethodName": "ObtenerB",
   "MethodClass": "ServicioLocalController",
   "MethodFile": "c:\\TEST1\\SolucionB\\Controllers\\ServicioLocalController.cs",
   "Code": "        [HttpGet(\u0022obtenerb\u0022)]\r\n        public async Task\u003CActionResult\u003CModeloB\u003E\u003E ObtenerB(int id)\r\n        {\r\n            var resultado = await _servicioLocal.ObtenerModeloBAsync(id);\r\n            return Ok(resultado);\r\n        }",
   "Children": [
     {
-      "Id": "2f9c5c83-44e9-46cd-8f12-87ca261f7783",
+      "Id": "1449448d-0206-496a-bbf4-4e59bcbab9fe",
       "MethodName": "ObtenerModeloBAsync",
       "MethodClass": "ServicioLocal",
       "MethodFile": "c:\\TEST1\\SolucionB\\Services\\ServicioLocal.cs",
       "Code": "        public async Task\u003CModeloB\u003E ObtenerModeloBAsync(int id)\r\n        {\r\n            var productoRemoto = await _remoteService.ServiceBackEnd.ProductosApiAsync(id);\r\n            \r\n            return new ModeloB\r\n            {\r\n                Id = id,\r\n                Descripcion = $\u0022Stock: {productoRemoto.Stock}\u0022\r\n            };\r\n        }",
       "Children": [
         {
+          "Id": "d975f385-67cf-48b6-a563-b293d5eb997c",
           "MethodName": "ProductosApiAsync",
           "MethodClass": "ServiceBackEndClient",
-          "MethodFile": "",
-          "Code": "",
+          "MethodFile": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+          "Code": "        public System.Threading.Tasks.Task\u003CProducto\u003E ProductosApiAsync(int id)\r\n        {\r\n            return ProductosApiAsync(id, System.Threading.CancellationToken.None);\r\n        }",
           "Children": [
             {
-              "Id": "2fbc30b9-b5d7-4752-a300-d1250037f232",
-              "MethodName": "GetPorId",
-              "MethodClass": "ProductosApiController",
-              "MethodFile": "c:\\TEST1\\SolucionA\\Controllers\\Api\\ProductosApiController.cs",
-              "Code": "        [HttpGet(\u0022{id}\u0022)]\r\n        public ActionResult\u003CProducto\u003E GetPorId(int id)\r\n        {\r\n            var producto = _service.ObtenerPorId(id);\r\n            if (producto == null)\r\n                return NotFound();\r\n            return Ok(producto);\r\n        }",
-              "Children": [],
-              "Origin": "Backend",
-              "CrossSolution": {
-                "HttpVerb": "GET",
-                "RequestedPath": "/api/ProductosApi/{id}"
-              },
+              "Id": "edcf7933-5ae0-4045-8e43-435d3f77f09b",
+              "MethodName": "ProductosApiAsync",
+              "MethodClass": "ServiceBackEndClient",
+              "MethodFile": "c:\\TEST1\\SolucionB\\RemoteClientBackEnd\\obj\\ServiceBackEndClient.cs",
+              "Code": "        public async System.Threading.Tasks.Task\u003CProducto\u003E ProductosApiAsync(int id, System.Threading.CancellationToken cancellationToken)\r\n        {\r\n            if (id == null)\r\n                throw new System.ArgumentNullException(\u0022id\u0022);\r\n    \r\n            var urlBuilder_ = new System.Text.StringBuilder();\r\n            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd(\u0027/\u0027) : \u0022\u0022).Append(\u0022/api/ProductosApi/{id}\u0022);\r\n            urlBuilder_.Replace(\u0022{id}\u0022, System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));\r\n    \r\n            var client_ = _httpClient;\r\n            try\r\n            {\r\n                using (var request_ = new System.Net.Http.HttpRequestMessage())\r\n                {\r\n                    request_.Method = new System.Net.Http.HttpMethod(\u0022GET\u0022);\r\n                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse(\u0022text/plain\u0022));\r\n    \r\n                    PrepareRequest(client_, request_, urlBuilder_);\r\n                    var url_ = urlBuilder_.ToString();\r\n                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);\r\n                    PrepareRequest(client_, request_, url_);\r\n    \r\n                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);\r\n                    try\r\n                    {\r\n                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ =\u003E h_.Key, h_ =\u003E h_.Value);\r\n                        if (response_.Content != null \u0026\u0026 response_.Content.Headers != null)\r\n                        {\r\n                            foreach (var item_ in response_.Content.Headers)\r\n                                headers_[item_.Key] = item_.Value;\r\n                        }\r\n    \r\n                        ProcessResponse(client_, response_);\r\n    \r\n                        var status_ = ((int)response_.StatusCode).ToString();\r\n                        if (status_ == \u0022200\u0022) \r\n                        {\r\n                            var objectResponse_ = await ReadObjectResponseAsync\u003CProducto\u003E(response_, headers_).ConfigureAwait(false);\r\n                            return objectResponse_.Object;\r\n                        }\r\n                        else\r\n                        if (status_ != \u0022200\u0022 \u0026\u0026 status_ != \u0022204\u0022)\r\n                        {\r\n                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false); \r\n                            throw new ApiException(\u0022The HTTP status code of the response was not expected (\u0022 \u002B (int)response_.StatusCode \u002B \u0022).\u0022, (int)response_.StatusCode, responseData_, headers_, null);\r\n                        }\r\n            \r\n                        return default(Producto);\r\n                    }\r\n                    finally\r\n                    {\r\n                        if (response_ != null)\r\n                            response_.Dispose();\r\n                    }\r\n                }\r\n            }\r\n            finally\r\n            {\r\n            }\r\n        }",
+              "Children": [
+                {
+                  "Id": "85bdab4a-8746-4eca-9cd2-9fc4ab007bb3",
+                  "MethodName": "GetPorId",
+                  "MethodClass": "ProductosApiController",
+                  "MethodFile": "c:\\TEST1\\SolucionA\\Controllers\\Api\\ProductosApiController.cs",
+                  "Code": "        [HttpGet(\u0022{id}\u0022)]\r\n        public ActionResult\u003CProducto\u003E GetPorId(int id)\r\n        {\r\n            var producto = _service.ObtenerPorId(id);\r\n            if (producto == null)\r\n                return NotFound();\r\n            return Ok(producto);\r\n        }",
+                  "Children": [],
+                  "Origin": "Backend",
+                  "CrossSolution": {
+                    "HttpVerb": "GET",
+                    "RequestedPath": "/api/ProductosApi/{id}"
+                  },
+                  "Unresolved": false
+                }
+              ],
+              "Origin": "RemoteWrapper",
               "Unresolved": false
             }
           ],
