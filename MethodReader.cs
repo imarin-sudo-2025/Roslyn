@@ -206,13 +206,68 @@ public class MethodReader
                         }
                     };
 
-                    // Crear nodo wrapper intermedio
+                    // Crear nodo wrapper intermedio con información completa
+                    var wrapperFullInfo = FindMatchingMethod(allMethodsFrontend, childInfo);
+                    
+                    var wrapperChildren = new List<ExecutionTreeNode>();
+                    
+                    // Buscar si el wrapper tiene una invocación a sí mismo con CancellationToken
+                    if (wrapperFullInfo != null)
+                    {
+                        var asyncOverload = wrapperFullInfo.Children
+                            .FirstOrDefault(c => 
+                                c.ChildMethodName == childInfo.ChildMethodName &&
+                                c.Parameters.Any(p => p.Contains("CancellationToken")));
+                        
+                        if (asyncOverload != null)
+                        {
+                            // Buscar el método del overload filtrando por tipo de parámetro (CancellationToken)
+                            var asyncOverloadMethod = allMethodsFrontend
+                                .FirstOrDefault(m =>
+                                    m.MethodName.Equals(asyncOverload.ChildMethodName, StringComparison.OrdinalIgnoreCase) &&
+                                    m.Class.Equals(asyncOverload.ClassName, StringComparison.OrdinalIgnoreCase) &&
+                                    m.Namespace.Contains(asyncOverload.ContainingNamespace, StringComparison.OrdinalIgnoreCase) &&
+                                    m.Parameters.Count == asyncOverload.Parameters.Count &&
+                                    m.Parameters.Any(p => p.Contains("CancellationToken")));
+                            
+                            if (asyncOverloadMethod != null)
+                            {
+                                var asyncOverloadNode = new ExecutionTreeNode
+                                {
+                                    Id = asyncOverloadMethod.Id.ToString(),
+                                    MethodName = asyncOverload.ChildMethodName,
+                                    MethodClass = asyncOverload.ClassName,
+                                    MethodFile = asyncOverloadMethod.File,
+                                    Code = ExtractMethodCode(asyncOverloadMethod),
+                                    Origin = "RemoteWrapper",
+                                    Children = new List<ExecutionTreeNode> { backendNode }
+                                };
+                                wrapperChildren.Add(asyncOverloadNode);
+                            }
+                            else
+                            {
+                                wrapperChildren.Add(backendNode);
+                            }
+                        }
+                        else
+                        {
+                            wrapperChildren.Add(backendNode);
+                        }
+                    }
+                    else
+                    {
+                        wrapperChildren.Add(backendNode);
+                    }
+                    
                     var wrapperNode = new ExecutionTreeNode
                     {
+                        Id = wrapperFullInfo?.Id.ToString() ?? "",
                         MethodName = childInfo.ChildMethodName,
                         MethodClass = childInfo.ClassName,
+                        MethodFile = wrapperFullInfo?.File ?? "",
+                        Code = wrapperFullInfo != null ? ExtractMethodCode(wrapperFullInfo) : "",
                         Origin = "RemoteWrapper",
-                        Children = new List<ExecutionTreeNode> { backendNode }
+                        Children = wrapperChildren
                     };
 
                     return wrapperNode;
@@ -306,5 +361,29 @@ public class MethodReader
         return methodName.EndsWith("Async", StringComparison.Ordinal)
             ? methodName[..^5]
             : methodName;
+    }
+
+    private static string ExtractMethodCode(MethodInfo method)
+    {
+        if (method.LineInit <= 0 || method.LineEnd <= 0)
+            return "";
+
+        try
+        {
+            if (File.Exists(method.File))
+            {
+                var lines = File.ReadAllLines(method.File);
+                var startIdx = Math.Max(0, method.LineInit - 1);
+                var endIdx = Math.Min(lines.Length - 1, method.LineEnd - 1);
+                if (startIdx <= endIdx)
+                {
+                    var codeLines = lines.Skip(startIdx).Take(endIdx - startIdx + 1).ToList();
+                    return string.Join(Environment.NewLine, codeLines);
+                }
+            }
+        }
+        catch { }
+
+        return "";
     }
 }
