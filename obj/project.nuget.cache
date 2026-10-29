@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aPy1iqQSelo=",
+  "dgSpecHash": "e1SOucf/6rE=",
   "success": true,
-  "projectFilePath": "C:\\TEST1\\Catalog\\Catalog.csproj",
+  "projectFilePath": "C:\\WorkSpace\\roslyn\\Catalog.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\isaac\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\isaac\\.nuget\\packages\\microsoft.build.framework\\17.11.48\\microsoft.build.framework.17.11.48.nupkg.sha512",
